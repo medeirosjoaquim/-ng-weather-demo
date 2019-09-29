@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+@import './styles/_media';
+@import './styles/_colors';
+
+body {
+  font-family: 'Quattrocento Sans',sans-serif;
+}
+
+a {
+  color: $ng-weather-light-blue;
+  text-decoration: none;
+}

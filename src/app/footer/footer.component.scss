@@ -1,0 +1,14 @@
+@import '../../styles/_media';
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background: $ng-weather-blue;
+  color: $ng-weather-light;
+  &-bio--name {
+    margin: 0 0.5rem;
+  }
+}

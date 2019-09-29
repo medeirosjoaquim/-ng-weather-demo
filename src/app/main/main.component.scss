@@ -1,0 +1,8 @@
+@import '../../styles/_media';
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.main {
+  min-height: 100vh;
+  background-color: $ng-weather-opaque;
+}

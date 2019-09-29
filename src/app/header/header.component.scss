@@ -1,0 +1,29 @@
+@import '../../styles/_media';
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+.header{
+  display: flex;
+  padding: 0.5rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  background: $ng-weather-deep-blue;
+  &--img {
+    width: 3rem;
+    margin: 0 1rem;
+  }
+
+  &--links {
+    margin-top: 1rem;
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin: 0 0.25rem;
+    }
+  }
+}
