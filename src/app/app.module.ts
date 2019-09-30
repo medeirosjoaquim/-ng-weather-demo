@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { WeatherModule } from './weather/weather.module';
 import { SearchComponent } from './search/search.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { SearchComponent } from './search/search.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    SearchComponent
+    SearchComponent,
+    PageNotFoundComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
