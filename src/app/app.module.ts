@@ -9,6 +9,7 @@ import { MainComponent } from './main/main.component';
 import { WeatherModule } from './weather/weather.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     FooterComponent,
     MainComponent,
     PageNotFoundComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

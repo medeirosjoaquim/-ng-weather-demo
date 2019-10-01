@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forecast.component.scss']
 })
 export class ForecastComponent implements OnInit {
+public receivedData: JSON;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  foundPlace(result: JSON) {
+    console.log(result);
+    this.receivedData = result;
+    return result;
   }
 
 }

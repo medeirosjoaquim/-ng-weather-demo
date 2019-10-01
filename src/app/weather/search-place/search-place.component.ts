@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, Output, EventEmitter, ElementRef, ViewChild } from '@angular/core';
 import * as places from 'places.js';
 @Component({
   selector: 'app-search-place',
@@ -8,6 +8,7 @@ import * as places from 'places.js';
 export class SearchPlaceComponent implements AfterViewInit {
   @ViewChild('addressInput', {static: true }) private addressInput: ElementRef;
 
+  @Output() placeResult = new EventEmitter<JSON>();
 
   constructor() { }
 
@@ -20,7 +21,6 @@ export class SearchPlaceComponent implements AfterViewInit {
       type: ['city'],
       aroundLatLngViaIP: false
     });
-    placesAutocomplete.on('change', e => console.log(e.suggestion));
-
+    placesAutocomplete.on('change', e => this.placeResult.emit(e.suggestion));
   }
 }

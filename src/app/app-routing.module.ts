@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
@@ -9,6 +10,7 @@ const routes: Routes = [
     loadChildren: () => import('./weather/weather.module').then(w => w.WeatherModule),
   },
   { path: 'welcome', component: WelcomeComponent },
+  { path: 'about', component: AboutComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 

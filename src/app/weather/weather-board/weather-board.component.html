@@ -1,3 +1,6 @@
 <div class="weather-board">
-  <p>weather-board works!</p>
+  <p> dataset:
+    <span  *ngIf="dataset">
+    {{dataset.name}} - {{dataset.hit.administrative[0]}}
+  </span></p>
 </div>

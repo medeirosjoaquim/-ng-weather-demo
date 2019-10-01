@@ -1,5 +1,9 @@
 .search-place {
+  display: flex;
   width: 100%;
+  justify-content: center;
   height: 2.5rem;
-  background-color: goldenrod;
+  &--input {
+    width: 20rem;
+  }
 }
