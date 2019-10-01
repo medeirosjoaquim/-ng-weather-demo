@@ -15,7 +15,10 @@ export class SearchPlaceComponent implements AfterViewInit {
     const placesAutocomplete = places({
       appId: 'plYLJA6WH2HP',
       apiKey: 'fb7e3a103ac9a2e341b5ce364c05998e',
-      container: this.addressInput.nativeElement
+      container: this.addressInput.nativeElement,
+      countries: ['br'],
+      type: ['city'],
+      aroundLatLngViaIP: false
     });
     placesAutocomplete.on('change', e => console.log(e.suggestion));
 
