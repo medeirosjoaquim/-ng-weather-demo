@@ -1,6 +1,8 @@
 <div class="weather-board">
   <p> dataset:
     <span  *ngIf="dataset">
-    {{dataset.name}} - {{dataset.hit.administrative[0]}}
+    <div *ngFor="let item of dataset">
+      <app-card [weatherData]="item"></app-card>
+    </div>
   </span></p>
 </div>

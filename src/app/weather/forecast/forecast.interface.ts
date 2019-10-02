@@ -1,91 +1,53 @@
-import { ForecastComponent } from './forecast.component';
-
-export interface Forecast {
-  coord: {
-    lon: string;
-    lat: string
+export interface DailyForeCast {
+  dt: string;
+  main: {
+    temp: string;
+    temp_min: string;
+    temp_max: string;
+    pressure: string;
+    sea_level: string;
+    grnd_level: string;
+    humidity: string;
+    temp_kf: string;
   };
   weather: [
     {
       id: string;
-      main: string,
-      description: string,
-      icon: string
+      main: string;
+      description: string;
+      icon: string;
     }
   ];
-  base: string;
-  main: {
-    temp: string;
-    pressure: string;
-    humidity: string;
-    temp_min: string;
-    temp_max: string;
+  clouds: {
+    all: string;
   };
-  visibility: string;
   wind: {
     speed: string;
     deg: string;
   };
-  clouds: {
-    all: string;
-  };
-  dt: string;
   sys: {
-      type: string;
-      id: string;
-      message: string;
-      country: string;
-      sunrise: string;
-      sunset: string;
+    pod: string;
   };
-  timezone: string;
-  id: string;
-  name: string;
-  cod: string;
+  dt_txt: string;
 }
 
-const  initializeForecast = (): Forecast => {
-  return {
-    coord: {
-      lon: '',
-      lat: ''
-    },
-    weather: [
-      {
-        id: '',
-        main: '',
-        description: '',
-        icon: ''
-      }
-    ],
-    base: '',
-    main: {
-      temp: '',
-      pressure: '',
-      humidity: '',
-      temp_min: '',
-      temp_max: '',
-    },
-    visibility: '',
-    wind: {
-      speed: '',
-      deg: '',
-    },
-    clouds: {
-      all: '',
-    },
-    dt: '',
-    sys: {
-        type: '',
-        id: '',
-        message: '',
-        country: '',
-        sunrise: '',
-        sunset: '',
-    },
-    timezone: '',
-    id: '',
-    name: '',
-    cod: '',
+export interface CityInfo {
+  id: string;
+  name: string;
+  coord: {
+    lat: string;
+    lon: string;
   };
-};
+  country: string;
+  timezone: string;
+  sunrise: string;
+  sunset: string;
+}
+
+export interface ForeCastResult {
+  city: CityInfo;
+  cnt: number;
+  cod: string;
+  list: DailyForeCast[];
+  message: string;
+}

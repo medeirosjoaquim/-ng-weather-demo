@@ -1,1 +1,11 @@
-<p>card works!</p>
+<div *ngIf="weatherData">
+      <div>data:
+        {{
+          convertUnixTimeToDate (weatherData.dt)
+        }}
+    </div>
+      <div>temp: {{ weatherData.main.temp }}</div>
+      <div>humid: {{ weatherData.main.humidity }}%
+      </div>
+      <hr />
+</div>

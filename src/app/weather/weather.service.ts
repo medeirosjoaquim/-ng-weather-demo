@@ -1,25 +1,28 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-
 import { Observable, of, throwError } from 'rxjs';
-import { catchError, tap } from 'rxjs/operators';
-
-import { Forecast } from './forecast/forecast.interface';
+import { catchError, tap, map } from 'rxjs/operators';
+import { ForeCastResult } from './forecast/forecast.interface';
 import { environment } from '../../environments/environment';
+
+const url = environment.openWeater.openWeatherApiUrl;
+const key = environment.openWeater.openWeatherKEy;
+
 @Injectable({
   providedIn: 'root'
 })
+
 export class WeatherService {
-  private openWeatherUrl = `http://api.openweathermap.org/data/2.5/weather`;
+
   // when the app goes to production it sould
   // be set in a cloud env variable ;
-
+  // in the mvp return 5 days, later let the user set it
   constructor(private http: HttpClient) { }
 
-  getMovies(): Observable<Forecast[]> {
-    return this.http.get<Forecast[]>(this.openWeatherUrl)
+  getForecast(lat, lon): Observable<ForeCastResult> {
+    return this.http.get<ForeCastResult>
+      (`${url}&lat=${lat}&lon=${lon}&cnt=3&appid=${key}`)
       .pipe(
-        tap(data => console.log(JSON.stringify(data))),
         catchError(this.handleError)
       );
   }
