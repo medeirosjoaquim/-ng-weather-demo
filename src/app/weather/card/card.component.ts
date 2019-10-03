@@ -16,7 +16,7 @@ export class CardComponent {
 
   ImgUrl(icon) {
     const url =
-      `http://openweathermap.org/img/w/${icon}.png`;
+      `https://openweathermap.org/img/w/${icon}.png`;
     return url;
   }
 
