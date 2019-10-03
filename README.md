@@ -1,28 +1,42 @@
-# NgWeather
+# ng-Weather - Angular OpenWeather demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+<h1 align="center">
+ng Weather
+</h1>
 
-## Development server
+<p align="center">
+  <a href="#o-que-e">O que é</a> •
+  <a href="#install">Install</a> •
+  <a href="#run">Run</a> •
+  <a href="#to-do">To do</a> •
+  <a href="#sobre-mim">Sobre mim</a> •
+  <a href="#contato">Contato</a> •
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## O que é
 
-## Code scaffolding
+* Demo para mostrar um pouco do meu conhecimento em Angular
+* Uma versão online está rodando em https://ng-weather-joaquim.herokuapp.com
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Install
+Após baixar os arquivos (git clone https://github.com/medeirosjoaquim/-ng-weather-demo.git):
 
-## Build
+```npm i```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Run
 
-## Running unit tests
+```npm serve```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## To do
 
-## Running end-to-end tests
+* Escrever testes!
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Contato
 
-## Further help
+e-mail! johnboxcodes@gmail.com! Linkedin:
+linkedin.com/in/joaquim-medeiros/
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# -ng-weather-demo
+## Sobre mim
+
+Olá, sou Joaquim. Já trabalhei como full-stack e no último ano meu
+foco foi frontend. Estou trabalhando como programador a cerca de dois anos!
