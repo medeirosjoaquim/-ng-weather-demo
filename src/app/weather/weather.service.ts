@@ -5,8 +5,8 @@ import { catchError, tap, map } from 'rxjs/operators';
 import { ForeCastResult } from './forecast/forecast.interface';
 import { environment } from '../../environments/environment';
 
-const url = environment.openWeater.openWeatherApiUrl;
-const key = environment.openWeater.openWeatherKEy;
+const url = environment.openWeather.openWeatherApiUrl;
+const key = environment.openWeather.openWeatherKEy;
 
 @Injectable({
   providedIn: 'root'
