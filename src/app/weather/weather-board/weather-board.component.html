@@ -1,5 +1,5 @@
-<h1 *ngIf="cityName">{{cityName}}</h1>
 <ng-container *ngIf="dataset">
+    <h1 *ngIf="cityName">{{cityName}}</h1>
   <div class="weather-board">
     <ng-container *ngFor="let item of dataset">
       <app-card [weatherData]="item"></app-card>

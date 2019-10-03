@@ -2,7 +2,7 @@
   <table class="weather-card">
     <tr>
       <td>
-          <div>humidity: {{ weatherData.main.humidity }}%
+          <div>
               <img
                 [src]="ImgUrl(weatherData.weather[0].icon)"
                 alt=""
@@ -16,7 +16,7 @@
                   convertUnixTimeToDate (weatherData.dt)
                 }}
             </div>
-            <div>temp: {{ weatherData.main.temp }}</div>
+            <div><strong>Temperature:</strong> {{ weatherData.main.temp }}C</div>
       </td>
     </tr>
   </table>
