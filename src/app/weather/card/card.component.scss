@@ -2,30 +2,35 @@
 @import "../../../styles/_colors";
 
 .weather-card {
-  padding: 1rem;
+  padding: 0 1rem;
   margin: 0.5rem;
-  background-color: $ng-weather-dark-blue;
+  display: flex;
+  justify-content: center;
+
+  &--table {
+    box-sizing: border-box;
+    background-color: transparent;
+    border-collapse: collapse;
+    background-color: #bdbdbd;
+  }
+  &--td {
+    color: black;
+    align-items: center;
+    text-align: left;
+    padding: 8px;
+    vertical-align: middle;
+    width: 40%;
+  }
+  &--icon {
+    width: 2rem;
+  }
 }
 
-table {
-  box-sizing: border-box;
-  max-width: 100%;
-  background-color: transparent;
-  border-collapse: collapse;
-}
 
-tr {
-  border-spacing: 0;
-  border-collapse: collapse;
-  background-color: #bdbdbd;
-}
-
-td {
-  color: black;
-  align-items: center;
-  text-align: left;
-  border-top: 1px solid #ddd;
-  padding: 8px;
-  vertical-align: middle;
-  width: 40%;
+@include desktop {
+  .weather-card {
+    &--table {
+      min-width: 60%;
+    }
+  }
 }

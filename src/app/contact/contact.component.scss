@@ -1,0 +1,23 @@
+@import "../../styles/_media";
+@import "../../styles/_colors";
+
+.contact {
+  padding: 1rem 2rem;
+  p {
+    margin: 1.5rem 0;
+  }
+  a {
+    color: $ng-weather-dark-blue;
+    text-decoration: underline;
+  }
+  img {
+    margin-right: 0.5rem;
+    width: 1.5rem;
+  }
+}
+
+@include tablet {
+  .contact {
+    padding: 1rem 10rem;
+  }
+}

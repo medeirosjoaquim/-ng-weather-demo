@@ -1,4 +1,4 @@
-import { Component, OnChanges, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { DailyForeCast } from '../forecast/forecast.interface';
 
 @Component({
@@ -6,13 +6,8 @@ import { DailyForeCast } from '../forecast/forecast.interface';
   templateUrl: './weather-board.component.html',
   styleUrls: ['./weather-board.component.scss']
 })
-export class WeatherBoardComponent implements OnChanges {
+export class WeatherBoardComponent {
   @Input() dataset: DailyForeCast[];
   @Input()cityName: string;
   constructor() { }
-
-  ngOnChanges() {
-    console.log(this.dataset);
-  }
-
 }

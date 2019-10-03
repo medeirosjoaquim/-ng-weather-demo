@@ -1,17 +1,13 @@
-import { Component, OnChanges, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { DailyForeCast } from '../forecast/forecast.interface';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
-export class CardComponent implements OnChanges {
+export class CardComponent {
   @Input() weatherData: DailyForeCast;
   constructor() { }
-
-  ngOnChanges() {
- //   console.log(this.weatherData);
-  }
 
   convertUnixTimeToDate(time): string {
     const date = new Date(time * 1000);
@@ -19,7 +15,8 @@ export class CardComponent implements OnChanges {
   }
 
   ImgUrl(icon) {
-    const url = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+    const url =
+      `http://openweathermap.org/img/w/${icon}.png`;
     return url;
   }
 

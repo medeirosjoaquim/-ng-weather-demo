@@ -1,0 +1,15 @@
+@import "../../styles/_media";
+@import "../../styles/_colors";
+
+.about {
+  padding: 1rem 2rem;
+  p {
+    margin: 1rem 0;
+  }
+}
+
+@include tablet {
+  .about {
+    padding: 1rem 10rem;
+  }
+}

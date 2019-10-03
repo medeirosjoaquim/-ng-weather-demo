@@ -1,23 +1,22 @@
 <ng-container *ngIf="weatherData">
-  <table class="weather-card">
-    <tr>
-      <td>
+  <div class="weather-card">
+    <table class="weather-card--table">
+      <tr class="weather-card--tr">
+        <td class="weather-card--td weather-card--icon">
+            <img
+              [src]="ImgUrl(weatherData.weather[0].icon)"
+              alt=""
+              srcset=""
+            >
+        </td>
+        <td>
           <div>
-              <img
-                [src]="ImgUrl(weatherData.weather[0].icon)"
-                alt=""
-                srcset=""
-              >
-            </div>
-      </td>
-      <td>
-          <div>
-              {{
-                  convertUnixTimeToDate (weatherData.dt)
-                }}
-            </div>
-            <div><strong>Temperature:</strong> {{ weatherData.main.temp }}C</div>
-      </td>
-    </tr>
-  </table>
+            {{ weatherData.dt_txt}}
+          </div>
+
+        </td>
+        <td><div><strong>Temperature:</strong> {{ weatherData.main.temp }}C</div></td>
+      </tr>
+    </table>
+  </div>
 </ng-container>

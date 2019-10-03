@@ -4,4 +4,12 @@
 .weather-board {
   padding: 1rem 2rem;
   width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &--title {
+    display: flex;
+    justify-content: center;
+  }
 }

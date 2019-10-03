@@ -27,7 +27,6 @@ export class ForecastComponent implements OnInit {
       );
   }
   foundPlace(result: any) {
-    console.log(result);
     this.getForecast(result.latlng.lat, result.latlng.lng);
     return result;
   }
