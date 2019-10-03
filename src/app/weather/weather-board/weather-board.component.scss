@@ -1,4 +1,10 @@
+@import '../../../styles/_media';
+@import '../../../styles/_colors';
+
 .weather-board {
-  padding: 4rem;
-  height: 20rem;
+  display: flex;
+  padding: 1rem 2rem;
+  width: 70vw;
+  justify-content: center;
+  flex-wrap: wrap;
 }

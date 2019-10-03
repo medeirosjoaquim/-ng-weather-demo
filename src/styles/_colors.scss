@@ -2,10 +2,16 @@ $ng-weather-blue: #176498;
 $ng-weather-light-blue: #61dafb;
 $ng-weather-light: #f5f6fa;
 $ng-weather-dark: #14151f;
+$ng-weather-dark-blue: #003478;
 $ng-weather-opaque: #d3deed;
+$ng-weather-white: rgb(255, 255, 255);
 $ng-weather-deep-blue:
     linear-gradient(to bottom right,
     #00132c 0,
+    #003478 50%,
+    #0055c4 100%);
+$ng-weather-half-blue:
+    linear-gradient(to bottom right,
     #003478 50%,
     #0055c4 100%);
 $ng-weather-deep-purple:

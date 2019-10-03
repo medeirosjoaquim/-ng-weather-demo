@@ -1,0 +1,11 @@
+@import '../../../styles/_media';
+@import '../../../styles/_colors';
+
+.weather-card {
+  padding: 1rem;
+  width: 15rem;
+  height: 15rem;
+  margin: 0.5rem;
+  background-color: $ng-weather-dark-blue;
+  color: $ng-weather-white;
+}

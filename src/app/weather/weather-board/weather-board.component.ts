@@ -8,6 +8,7 @@ import { DailyForeCast } from '../forecast/forecast.interface';
 })
 export class WeatherBoardComponent implements OnChanges {
   @Input() dataset: DailyForeCast[];
+  @Input()cityName: string;
   constructor() { }
 
   ngOnChanges() {

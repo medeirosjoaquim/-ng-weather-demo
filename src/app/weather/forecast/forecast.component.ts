@@ -11,6 +11,7 @@ import { Observable } from 'rxjs';
 
 export class ForecastComponent implements OnInit {
   dailyForecast: DailyForeCast[];
+  forecastLocal: string;
 
   constructor(private weatherService: WeatherService, ) { }
 
@@ -19,7 +20,10 @@ export class ForecastComponent implements OnInit {
   getForecast(lat, lon) {
     this.weatherService.getForecast(lat, lon)
       .subscribe(
-        result => this.dailyForecast = result.list
+        result => {
+          this.forecastLocal = result.city.name;
+          this.dailyForecast = result.list;
+        }
       );
   }
   foundPlace(result: any) {

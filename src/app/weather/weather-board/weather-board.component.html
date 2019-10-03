@@ -1,8 +1,8 @@
-<div class="weather-board">
-  <p> dataset:
-    <span  *ngIf="dataset">
-    <div *ngFor="let item of dataset">
+<h1 *ngIf="cityName">{{cityName}}</h1>
+<ng-container *ngIf="dataset">
+  <div class="weather-board">
+    <ng-container *ngFor="let item of dataset">
       <app-card [weatherData]="item"></app-card>
-    </div>
-  </span></p>
-</div>
+    </ng-container>
+  </div>
+</ng-container>

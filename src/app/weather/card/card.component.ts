@@ -10,12 +10,17 @@ export class CardComponent implements OnChanges {
   constructor() { }
 
   ngOnChanges() {
-    console.log(this.weatherData);
+ //   console.log(this.weatherData);
   }
 
   convertUnixTimeToDate(time): string {
     const date = new Date(time * 1000);
     return  date.toUTCString();
+  }
+
+  ImgUrl(icon) {
+    const url = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+    return url;
   }
 
 }

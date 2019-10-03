@@ -1,11 +1,17 @@
-<div *ngIf="weatherData">
-      <div>data:
-        {{
+<ng-container *ngIf="weatherData">
+  <div class="weather-card">
+    <div>data:
+      {{
           convertUnixTimeToDate (weatherData.dt)
         }}
     </div>
-      <div>temp: {{ weatherData.main.temp }}</div>
-      <div>humid: {{ weatherData.main.humidity }}%
-      </div>
-      <hr />
-</div>
+    <div>temp: {{ weatherData.main.temp }}</div>
+    <div>humid: {{ weatherData.main.humidity }}%
+      <img
+        [src]="ImgUrl(weatherData.weather[0].icon)"
+        alt=""
+        srcset=""
+      >
+    </div>
+  </div>
+</ng-container>

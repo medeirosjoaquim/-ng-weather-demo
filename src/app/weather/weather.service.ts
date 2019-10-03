@@ -21,7 +21,7 @@ export class WeatherService {
 
   getForecast(lat, lon): Observable<ForeCastResult> {
     return this.http.get<ForeCastResult>
-      (`${url}&lat=${lat}&lon=${lon}&cnt=3&appid=${key}`)
+      (`${url}&lat=${lat}&lon=${lon}&cnt=9&appid=${key}`)
       .pipe(
         catchError(this.handleError)
       );
