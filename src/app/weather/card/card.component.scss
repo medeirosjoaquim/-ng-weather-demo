@@ -3,9 +3,46 @@
 
 .weather-card {
   padding: 1rem;
-  width: 15rem;
-  height: 15rem;
   margin: 0.5rem;
   background-color: $ng-weather-dark-blue;
   color: $ng-weather-white;
+}
+
+table {
+  -webkit-tap-highlight-color: transparent;
+  color: #505050;
+  box-sizing: border-box;
+  border-spacing: 0;
+  max-width: 100%;
+  background-color: transparent;
+  width: 650px;
+  border-collapse: collapse;
+  font: 400 14px/1.4 Roboto,Arial,sans-serif;
+}
+
+tr {
+  -webkit-tap-highlight-color: transparent;
+color: #505050;
+border-spacing: 0;
+border-collapse: collapse;
+font: 400 14px/1.4 Roboto,Arial,sans-serif;
+box-sizing: border-box;
+border: 1px solid #ddd;
+background-color: #eee;
+}
+
+td {
+  -webkit-tap-highlight-color: transparent;
+color: #505050;
+border-spacing: 0;
+border-collapse: collapse;
+font: 400 14px/1.4 Roboto,Arial,sans-serif;
+box-sizing: border-box;
+align-items: center;
+text-align: left;
+border-top: 1px solid #ddd;
+padding: 8px;
+line-height: 1.42857143;
+vertical-align: middle;
+width: 40%;
 }

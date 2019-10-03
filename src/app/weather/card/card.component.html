@@ -1,17 +1,23 @@
 <ng-container *ngIf="weatherData">
-  <div class="weather-card">
-    <div>data:
-      {{
-          convertUnixTimeToDate (weatherData.dt)
-        }}
-    </div>
-    <div>temp: {{ weatherData.main.temp }}</div>
-    <div>humid: {{ weatherData.main.humidity }}%
-      <img
-        [src]="ImgUrl(weatherData.weather[0].icon)"
-        alt=""
-        srcset=""
-      >
-    </div>
-  </div>
+  <table class="weather-card">
+    <tr>
+      <td>
+          <div>humidity: {{ weatherData.main.humidity }}%
+              <img
+                [src]="ImgUrl(weatherData.weather[0].icon)"
+                alt=""
+                srcset=""
+              >
+            </div>
+      </td>
+      <td>
+          <div>
+              {{
+                  convertUnixTimeToDate (weatherData.dt)
+                }}
+            </div>
+            <div>temp: {{ weatherData.main.temp }}</div>
+      </td>
+    </tr>
+  </table>
 </ng-container>
