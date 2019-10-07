@@ -39,4 +39,4 @@ linkedin.com/in/joaquim-medeiros/
 ## Sobre mim
 
 Olá, sou Joaquim. Já trabalhei como full-stack e no último ano meu
-foco foi frontend. Estou trabalhando como programador a cerca de dois anos!
+foco foi frontend. Estou trabalhando como programador há cerca de dois anos!
