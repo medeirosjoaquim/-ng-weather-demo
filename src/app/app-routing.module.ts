@@ -8,6 +8,11 @@ import { ContactComponent } from './contact/contact.component';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'forecast',
+    pathMatch: 'full'
+  },
+  {
+    path: 'forecast',
     loadChildren: () => import('./weather/weather.module').then(w => w.WeatherModule),
   },
   { path: 'welcome', component: WelcomeComponent },
@@ -17,7 +22,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash:true})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
