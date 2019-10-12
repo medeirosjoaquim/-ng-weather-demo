@@ -1,0 +1,4 @@
+{"v":0,"level":30,"name":"newrelic","hostname":"thoughtbox","pid":6741,"time":"2019-10-12T13:41:41.173Z","msg":"Using New Relic for Node.js. Agent version: 5.13.1; Node version: v10.9.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"thoughtbox","pid":6741,"time":"2019-10-12T13:41:41.181Z","msg":"Module not enabled in configuration; not starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"thoughtbox","pid":6949,"time":"2019-10-12T14:02:22.918Z","msg":"Using New Relic for Node.js. Agent version: 5.13.1; Node version: v10.9.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"thoughtbox","pid":6949,"time":"2019-10-12T14:02:22.925Z","msg":"Module not enabled in configuration; not starting."}
